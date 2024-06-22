@@ -18,7 +18,7 @@ To run the Temperature Converter, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/temperature-converter.git
+   git clone https://github.com/artist80/temperature-converter.git
    ```
 2. **Navigate to the project directory:**
    ```sh
@@ -46,7 +46,7 @@ To use the Temperature Converter:
 
    - If it's a Python script:
      ```sh
-     python temperature_converter.py
+     python3 temperature_converter.py
      ```
 2. **Enter the temperature value you want to convert.**
 3. **Select the input unit (Celsius, Fahrenheit, Kelvin).**
@@ -57,7 +57,7 @@ To use the Temperature Converter:
 
 ### Web Application
 
-1. Open your browser and go to `http://localhost:3000`.
+1. Open your browser and go to `http://127.0.0.1:5000`.
 2. Enter `100` in the input field.
 3. Select `Celsius` as the input unit.
 4. Select `Fahrenheit` as the output unit.
@@ -67,7 +67,7 @@ To use the Temperature Converter:
 
 1. Run the script:
    ```sh
-   python temperature_converter.py
+   python3 temperature_converter.py
    ```
 2. Follow the on-screen instructions to input the temperature and select units.
 
@@ -98,9 +98,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions, suggestions, or feedback, please contact:
 
-- **Name:** Your Name
-- **Email:** your.email@example.com
-- **GitHub:** [yourusername](https://github.com/yourusername)
+- **Name:** CompcIT
+- **Email:** contact@compcit.com
+- **GitHub:** https://github.com/artist80
 
 ---
 
