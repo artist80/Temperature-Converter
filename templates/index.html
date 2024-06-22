@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/logo.png" alt="CompCit Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temperature Converter</h1>
+        <form action="/convert" method="post">
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" required>
+
+            <label for="from_unit">From:</label>
+            <select id="from_unit" name="from_unit" required>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="to_unit">To:</label>
+            <select id="to_unit" name="to_unit" required>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button type="submit">Convert</button>
+        </form>
+
+        {% if temperature %}
+            <div class="result">
+                <h2>Conversion Result:</h2>
+                <p>{{ temperature }} {{ from_unit }} = {{ converted_temp }} {{ to_unit }}</p>
+            </div>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CompCit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
