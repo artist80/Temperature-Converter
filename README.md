@@ -42,7 +42,7 @@ To use the Temperature Converter:
      ```sh
      npm start
      ```
-     Open your web browser and go to `http://localhost:3000`.
+     Open your web browser and go to `http://127.0.0.1:5000`.
 
    - If it's a Python script:
      ```sh
